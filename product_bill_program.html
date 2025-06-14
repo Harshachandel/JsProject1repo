@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Product Bill</title>
+</head>
+<body>
+
+  <h2>Bill</h2>
+
+  <script>
+    var product = prompt("Enter Product Name:");
+    var price = Number(prompt("Enter Price per Unit:"));
+    var quantity = Number(prompt("Enter Quantity:"));
+
+    var total = price * quantity;
+
+    document.write("Product: " + product + "<br>");
+    document.write("Price per Unit: ₹" + price + "<br>");
+    document.write("Quantity: " + quantity + "<br>");
+    document.write("<b>Total Bill: ₹" + total + "</b>");
+  </script>
+
+</body>
+</html>

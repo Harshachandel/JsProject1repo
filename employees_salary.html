@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Salary</title>
+</head>
+<body>
+
+  <h2>Employee Salary Details</h2>
+
+  <script>
+    var name = prompt("Enter Employee Name:");
+    var Salary = Number(prompt("Enter Your Salary:"));
+
+    // HRA = 20% of basic, DA = 15%, and PF deduction = 10%
+    var hra = Salary * 0.20;
+    var da = Salary * 0.15;
+    var pf = Salary * 0.10;
+
+    var gross = Salary + hra + da;
+    var net = gross - pf;
+
+    document.write("Employee Name: " + name + "<br>");
+    document.write("Basic Salary: ₹" + Salary + "<br>");
+    document.write("HRA (20%): ₹" + hra + "<br>");
+    document.write("DA (15%): ₹" + da + "<br>");
+    document.write("PF Deduction (10%): ₹" + pf + "<br>");
+    document.write("<b>Gross Salary: ₹" + gross + "</b><br>");
+    document.write("<b>Net Salary: ₹" + net + "</b>");
+  </script>
+
+</body>
+</html>

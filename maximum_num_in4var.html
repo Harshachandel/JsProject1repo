@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Maximum number in 4 Variables</h1>
+
+    <script>
+
+        var a = Number(prompt("Enter the 1 number "));
+        var b = Number(prompt("Enter the 2 number "));
+        var c = Number(prompt("Enter the 3 number "));
+        var d = Number(prompt("Enter the 4 number "));
+
+        if (a === b && b === c && c === d) {
+            alert("All numbers are equal: " + a);
+        } else if (a >= b && a >= c && a >= d) {
+            alert(a+ " is maximum number then all the numbers !");
+        } else if (b >= a && b >= c && b >= d) {
+            alert(b+ " is maximum number then all the numbers !");
+        } else if (c >= a && c >= b && c >= d) {
+            alert(c, " is maximum number then all the numbers !");
+        } else if (d >= a && d >= b && d >= c) {
+            alert(d+ " is maximum number then all the numbers !");
+        } else {
+        alert("Please enter numbers only !");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
